@@ -17,13 +17,13 @@ function handleSubmit(event) {
   //* 2eme methode
   //*let inputForm = formulaire.querySelector('configuration')
   //*console.log(inputForm.value);
-
+}
 
 const form = document.querySelector('form');
 
 form.addEventListener('submit', handleSubmit);
 
-}
+
 
 
 
