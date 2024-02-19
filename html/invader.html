@@ -8,8 +8,38 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <form class="configuration"></form>
+  <header>
+  <form  method="get" class="configuration">
+
+    <label for="taille"> quelle taille de grille souhaitez vous?</label><br>
+    <select name="taille" id="taille">
+      <option value="4">4</option>
+      <option value="8"> 8</option>
+      <option value="12">12</option>
+    </select>
+    <input type="submit">
+    <label for="taille"> quelle taille de pixel souhaitez vous?</label><br>
+    <select name="taille" id="taille">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+    </select>
+
+    <input type="submit">
+  </form>
+  </header>
+  
   <div id="invader"></div>
+  
+  <footer>
+    <div class="pallete">
+      <div id="item1"  class="col "></div>
+      <div id="item2"  class="col "></div>
+      <div id="item3"  class="col "></div>
+      <div id="item4"  class="col "></div>
+      
+  </div>
+  </footer>
   <script src="../js/app.js"></script>
 </body>
 </html>
