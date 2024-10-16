@@ -1,106 +1,93 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: rgb(78, 78, 153);
+    background-color: #5771e4;
+    margin: 0px;
+  }
+  
+  #invader {
+    background-color: #5771e4;
+    width: 100%;
+    min-height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    height: 100vh;
-    
-}
-
-header{
-    position: fixed;
-    top: 0;
+  }
+  
+  .configuration {
+    background-color: #3c40c6;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 80px;
-    background-color: #3148AD;
-}
-
-.configuration {
-    width: 50%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.taille-grille {
-    text-align: center;
-    padding: 8px;
+  }
+  
+  .configuration input {
+    padding: 1em;
+    width: 10em;
     border: none;
+    font-size: 1.2em;
     margin-right: 2px;
-    border-radius: 5px 0 0 5px;
-    font-size: 0.5rem;
-}
-.valider {
-    background-color: #9B68E4;
-    outline: none;
+    border-radius: 5px 0px 0px 5px;
+  }
+  
+  .configuration button {
+    padding: 1em;
     border: none;
+    font-size: 1.2em;
+    background-color: #8b57e4;
+    border-radius: 0px 5px 5px 0px;
     color: white;
-    font-size: 0.5rem;
-    padding: 8px;
-    border-radius: 0 5px 5px 0;
-}
-
-.pallete
-{
-    position: absolute;
+    cursor: pointer;
+  }
+  
+  .palette {
+    position: fixed;
     bottom: 0;
     right: 0;
-    display: flex ;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(0, 26, 255);
-    width: 180px;
-    height: 45px;
-    display: flex;  
-}
-
-.col
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
+  }
+  
+  .palette-color {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background-color: gray;
-    
-    }
-#item1 {
-    background-color: lightgrey;
-    border: 2px solid black;
-    
-}
-#item2 {
-    background-color: grey;
-    border: 2px solid black opacity 0;
-}
-#item3 {
-    background-color: orange;
-    border: 2px solid black opacity 0;
-}
-#item4 {
-    background-color: green;
-    border: 2px solid black opacity 0;
-}
-
-footer
-{
-    width: 100%;
-    display:flex;
-    justify-content:end;
-    
-}
+    margin: 0.8em;
+    cursor: pointer;
+  }
+  
+  .palette--empty {
+    background-color: white;
+  }
+  .palette--plain {
+    background-color: black;
+  }
+  .palette--light {
+    background-color: rgb(22, 132, 16);
+  }
+  .palette--highlight {
+    background-color: rgb(216, 31, 207);
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .pixel {
+    /* width: 20px;
+    height: 20px; */
+    background-color: white;
+    border: 2px solid grey;
+  }
+  
+  .pixel--empty {
+    background-color: white;
+  }
+  .pixel--plain {
+    background-color: black;
+  }
+  .pixel--light {
+    background-color: rgb(22, 132, 16);
+  }
+  .pixel--highlight {
+    background-color: rgb(216, 31, 207);
+  }
+  
